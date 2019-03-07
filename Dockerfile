@@ -1,4 +1,4 @@
-FROM  lsiobase/alpine.armhf:3.8
+FROM  lsiobase/alpine.armhf:3.9
 
 RUN   apk add --no-cache curl nano git python2 py-psutil \
       && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py \
