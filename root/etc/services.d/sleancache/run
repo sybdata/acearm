@@ -1,4 +1,4 @@
 #!/usr/bin/with-contenv bash
 
 exec \
-s6-setuidgid abc /acestrem.engine/start.sh
+s6-setuidgid abc /acestream.engine/start.sh
