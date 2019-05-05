@@ -7,7 +7,7 @@ RUN   apk add --no-cache curl nano git python2 py-psutil \
       && pip install --no-binary gevent gevent \
       && apk del --purge build-dependencies
 
-ADD   acestream_3.1.37_Py2.7.15_webUI_ARMv7.tar.gz /
+ADD   acestream_3.1.38_Py2.7.16_webUI_ARMv7.tar.gz /
 
 RUN   find /acestream.engine/androidfs/system -type d -exec chmod 755 {} \; \
       && find /acestream.engine/androidfs/system -type f -exec chmod 644 {} \; \
