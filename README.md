@@ -31,7 +31,7 @@ $ docker run --privileged -d --restart always -e PUID=0 -e PGID=0 --name aceprox
 tail -f -n 10 /tmp/acehttp.log
 ```
 ```
-tail -f -n 50 /acestream.engine/acestream.log
+tail -f -n 50 /acestrem.engine/acestream.log
 ```
 ```
 Using python 2.7.15 .....
@@ -134,3 +134,4 @@ http://192.168.178.37:6868/ace/getstream?infohash=4c9a867f5780a257e20f179f9136a6
 #EXTINF:-1 tvg-name="Убийство Джоан" group-title="films" acestream-mediainfo-container="Matroska" acestream-mediainfo-video-codec="AVC" acestream-mediainfo-audio-codec="AC3",Убийство Джоан
 http://192.168.178.37:6868/ace/getstream?infohash=cca7e2dead80951c7dafc81669bf15d06b245662&hlc=1&transcode_audio=0&transcode_mp3=0&transcode_ac3=0&preferred_audio_language=eng
 ```
+

@@ -7,12 +7,12 @@ RUN   apk add --no-cache curl nano git python2 py-psutil \
       && pip install --no-binary gevent gevent \
       && apk del --purge build-dependencies
 
-ADD   acestream_3.1.37_Py2.7.15_webUI_ARMv7.tar.gz /
+ADD   acestream_3.1.33_py2.7.15_webUI_ARMv7.tar.gz /
 
-RUN   find /acestream.engine/androidfs/system -type d -exec chmod 755 {} \; \
-      && find /acestream.engine/androidfs/system -type f -exec chmod 644 {} \; \
-      && chmod 755 /acestream.engine/androidfs/system/bin/* \
-      /acestream.engine/androidfs/acestream.engine/python/bin/python
+RUN   find /acestrem.engine/androidfs/system -type d -exec chmod 755 {} \; \
+      && find /acestrem.engine/androidfs/system -type f -exec chmod 644 {} \; \
+      && chmod 755 /acestrem.engine/androidfs/system/bin/* \
+      /acestrem.engine/androidfs/acestream.engine/python/bin/python
 
 COPY  ./HTTPAceProxy /HTTPAceProxy
 
@@ -20,4 +20,4 @@ EXPOSE  6878 62062 8621 8000
 
 COPY  root/ /
 
-RUN chmod +x /acestream.engine/start.sh
+RUN chmod +x /acestrem.engine/start.sh
